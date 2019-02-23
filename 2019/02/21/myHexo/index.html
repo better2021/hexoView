@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="这是一个新的文档 hexo 搭建的博客主题  123let arr = [1, 2, 3, 6, 5];Math.max(...arr); // 6Math.min(...arr); // 1">
+<meta name="description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
 <meta name="keywords" content="前端笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="myHexo">
+<meta property="og:title" content="webSocket协议">
 <meta property="og:url" content="http://yoursite.com/2019/02/21/myHexo/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="这是一个新的文档 hexo 搭建的博客主题  123let arr = [1, 2, 3, 6, 5];Math.max(...arr); // 6Math.min(...arr); // 1">
+<meta property="og:description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-21T11:05:05.146Z">
+<meta property="og:updated_time" content="2019-02-23T15:09:37.938Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="myHexo">
-<meta name="twitter:description" content="这是一个新的文档 hexo 搭建的博客主题  123let arr = [1, 2, 3, 6, 5];Math.max(...arr); // 6Math.min(...arr); // 1">
+<meta name="twitter:title" content="webSocket协议">
+<meta name="twitter:description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>myHexo | Hexo</title>
+  <title>webSocket协议 | Hexo</title>
   
 
 
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">myHexo</h1>
+          <h1 class="post-title" itemprop="name headline">webSocket协议</h1>
         
 
         <div class="post-meta">
@@ -310,10 +310,38 @@
       
 
       
-        <h3 id="这是一个新的文档"><a href="#这是一个新的文档" class="headerlink" title="这是一个新的文档"></a>这是一个新的文档</h3><blockquote>
-<p>hexo 搭建的博客主题</p>
+        <blockquote>
+<p>webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">5</span>];</span><br><span class="line"><span class="built_in">Math</span>.max(...arr); <span class="comment">// 6</span></span><br><span class="line"><span class="built_in">Math</span>.min(...arr); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
+<p><strong>webSocket 有以下特点：</strong></p>
+<ul>
+<li>建立在 TCP 协议之上</li>
+<li>与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议</li>
+<li>数据格式比较轻量，也可以发送二进制数据</li>
+<li>没有同源限制，客户端可以与任意服务器通信</li>
+<li>协议标识是<code>ws</code>,(如果加密，则为<code>wss</code>),服务器网址是 URL</li>
+</ul>
+<blockquote>
+<p>ws://example.com:80/some</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">'wss://echo.websocket.org'</span>);</span><br><span class="line">ws.onopen = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'连接打开...'</span>);</span><br><span class="line">  ws.send(<span class="string">'hello webSocket'</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onmessage = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`接受到的信息<span class="subst">$&#123;e.data&#125;</span>`</span>);</span><br><span class="line">  ws.close();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onclose = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'连接关闭'</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onerror = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(e);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="webSocket-readyState"><a href="#webSocket-readyState" class="headerlink" title="webSocket.readyState"></a>webSocket.readyState</h3><blockquote>
+<p><code>readyState</code> 属性返回实例对象的当前状态，共有 4 种状态</p>
+</blockquote>
+<ul>
+<li>CONNECTING:值为 0，表示正在连接</li>
+<li>OPEN:值为 1，表示连接成功，可以通信了</li>
+<li>CLOSEING:值为 2，表示连接正在关闭</li>
+<li>CLOSEED:值 3，表示连接已经关闭，或者打开连接失败</li>
+</ul>
+<p><em>WebSocket 是一种浏览器与服务器进行全双工通讯的网络技术，属于用于层协议。他基于 TCP 传输协议，并复用 HTTP 的握手通道</em></p>
+<p>WebSocket 为了保持客户端、服务端的实时双向通信，需要确保客户端、服务端之间的 TCP 通道保持连接没有断开。然而，对于长时间没有数据往来的连接，如果依旧长时间保持着，可能会浪费包括的连接资源。</p>
+<p>但不排除有些场景，客户端、服务端虽然长时间没有数据往来，但仍需要保持连接。这个时候，可以采用心跳来实现。</p>
+<p>发送方-&gt;接收方：ping<br>接收方-&gt;发送方：pong<br>ping、pong 的操作，对应的是 WebSocket 的两个控制帧，opcode 分别是 0x9、0xA。</p>
+<blockquote>
+<p>举例，WebSocket 服务端向客户端发送 ping，只需要如下代码（采用 ws 模块）</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ws.ping(<span class="string">''</span>, <span class="literal">false</span>, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -483,7 +511,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#这是一个新的文档"><span class="nav-number">1.</span> <span class="nav-text">这是一个新的文档</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#webSocket-readyState"><span class="nav-number">1.</span> <span class="nav-text">webSocket.readyState</span></a></li></ol></div>
             
 
           </div>
@@ -669,7 +697,7 @@
         var disqus_config = function () {
           this.page.url = 'http://yoursite.com/2019/02/21/myHexo/';
           this.page.identifier = '2019/02/21/myHexo/';
-          this.page.title = 'myHexo';
+          this.page.title = 'webSocket协议';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://hexoFeiyu.disqus.com/embed.js';
