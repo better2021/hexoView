@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1234// 自执行函数(function(x) &amp;#123;  console.log(x); // 10&amp;#125;)(10);  可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker 的组件，可以直接在 jsx 中使用它  12345678910import React from &apos;react&apos;;const MyComponents = &amp;#123;">
+<meta name="description" content="可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker 的组件，可以直接在 jsx 中使用它  12345678910import React from &apos;react&apos;;const MyComponents = &amp;#123;  DatePicker: function DatePicker(props) &amp;#123;    return &amp;lt;div&amp;g">
 <meta name="keywords" content="前端笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="react笔记">
 <meta property="og:url" content="http://yoursite.com/2019/02/21/react笔记/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="1234// 自执行函数(function(x) &amp;#123;  console.log(x); // 10&amp;#125;)(10);  可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker 的组件，可以直接在 jsx 中使用它  12345678910import React from &apos;react&apos;;const MyComponents = &amp;#123;">
+<meta property="og:description" content="可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker 的组件，可以直接在 jsx 中使用它  12345678910import React from &apos;react&apos;;const MyComponents = &amp;#123;  DatePicker: function DatePicker(props) &amp;#123;    return &amp;lt;div&amp;g">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-28T10:24:50.544Z">
+<meta property="og:updated_time" content="2019-02-28T15:25:52.908Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react笔记">
-<meta name="twitter:description" content="1234// 自执行函数(function(x) &amp;#123;  console.log(x); // 10&amp;#125;)(10);  可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker 的组件，可以直接在 jsx 中使用它  12345678910import React from &apos;react&apos;;const MyComponents = &amp;#123;">
+<meta name="twitter:description" content="可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker 的组件，可以直接在 jsx 中使用它  12345678910import React from &apos;react&apos;;const MyComponents = &amp;#123;  DatePicker: function DatePicker(props) &amp;#123;    return &amp;lt;div&amp;g">
 
 
 
@@ -310,8 +310,7 @@
       
 
       
-        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 自执行函数</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x); <span class="comment">// 10</span></span><br><span class="line">&#125;)(<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
-<blockquote>
+        <blockquote>
 <p>可以使用<code>jsx</code>中的点表示来引用<code>react</code>组件<br>例如：MyComponents.DatePiker 的组件，可以直接在 jsx 中使用它</p>
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">const</span> MyComponents = &#123;</span><br><span class="line">  DatePicker: <span class="function"><span class="keyword">function</span> <span class="title">DatePicker</span>(<span class="params">props</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &lt;div&gt;Image a &#123;props.color&#125; here&lt;/div&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">BlueDatePicker</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &lt;MyComponents.DatePicker color="blue" /&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -331,6 +330,7 @@
 <blockquote>
 <p>你可以通过配置 defaultProps 为 props 定义默认值：</p>
 </blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 自执行函数</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(x); <span class="comment">// 10</span></span><br><span class="line">&#125;)(<span class="number">10</span>);</span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Greeting</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> &lt;h1&gt;hello,&#123;this.props.name&#125;&lt;/h1&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 为属性指定默认值</span></span><br><span class="line">Greeting.defaultProps = &#123;</span><br><span class="line">  name: <span class="string">'Stranger'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 渲染 'hello,Stranger'</span></span><br><span class="line">ReactDOM.render(&lt;Greeting /&gt;, document.getElementById('example'));</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>Refs 提供了一种方式，用于访问在 render 方法中创建的 DOM 节点或 React 元素</p>
@@ -506,6 +506,13 @@
   </span>
   <span class="author" itemprop="copyrightHolder">feiyu</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Site words total count"></span>
   
 </div>
 
