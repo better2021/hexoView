@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
+<meta name="description" content="函数是JavaScript应用程序的基础。 它帮助你实现抽象层，模拟类，信息隐藏和模块。 在TypeScript里，虽然已经支持类，命名空间和模块，但函数仍然是主要的定义 行为的地方。 TypeScript为JavaScript函数添加了额外的功能，让我们可以更容易地使用。  typescript 为函数定义类型 我们可以给每个参数添加类型之后再为函数本身添加返回值类型，TypeScript 能">
 <meta name="keywords" content="前端笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webSocket协议">
-<meta property="og:url" content="http://yoursite.com/2019/02/21/myHexo/index.html">
+<meta property="og:title" content="typeScript的函数及泛型">
+<meta property="og:url" content="http://yoursite.com/2019/05/29/typeScript中的函数及泛型/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
+<meta property="og:description" content="函数是JavaScript应用程序的基础。 它帮助你实现抽象层，模拟类，信息隐藏和模块。 在TypeScript里，虽然已经支持类，命名空间和模块，但函数仍然是主要的定义 行为的地方。 TypeScript为JavaScript函数添加了额外的功能，让我们可以更容易地使用。  typescript 为函数定义类型 我们可以给每个参数添加类型之后再为函数本身添加返回值类型，TypeScript 能">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-25T08:34:45.537Z">
+<meta property="og:updated_time" content="2019-05-29T15:13:57.827Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webSocket协议">
-<meta name="twitter:description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
+<meta name="twitter:title" content="typeScript的函数及泛型">
+<meta name="twitter:description" content="函数是JavaScript应用程序的基础。 它帮助你实现抽象层，模拟类，信息隐藏和模块。 在TypeScript里，虽然已经支持类，命名空间和模块，但函数仍然是主要的定义 行为的地方。 TypeScript为JavaScript函数添加了额外的功能，让我们可以更容易地使用。  typescript 为函数定义类型 我们可以给每个参数添加类型之后再为函数本身添加返回值类型，TypeScript 能">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/21/myHexo/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/29/typeScript中的函数及泛型/">
 
 
 
 
 
-  <title>webSocket协议 | Hexo</title>
+  <title>typeScript的函数及泛型 | Hexo</title>
   
 
 
@@ -239,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexoView/2019/02/21/myHexo/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexoView/2019/05/29/typeScript中的函数及泛型/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="feiyu">
@@ -256,7 +256,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">webSocket协议</h1>
+          <h1 class="post-title" itemprop="name headline">typeScript的函数及泛型</h1>
         
 
         <div class="post-meta">
@@ -268,8 +268,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-21T15:52:49+07:00">
-                2019-02-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-29T10:10:00+07:00">
+                2019-05-29
               </time>
             
 
@@ -287,8 +287,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hexoView/2019/02/21/myHexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/21/myHexo/" itemprop="commentCount"></span>
+                <a href="/hexoView/2019/05/29/typeScript中的函数及泛型/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/29/typeScript中的函数及泛型/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -296,7 +296,7 @@
 
           
           
-             <span id="/hexoView/2019/02/21/myHexo/" class="leancloud_visitors" data-flag-title="webSocket协议">
+             <span id="/hexoView/2019/05/29/typeScript中的函数及泛型/" class="leancloud_visitors" data-flag-title="typeScript的函数及泛型">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -328,37 +328,24 @@
 
       
         <blockquote>
-<p>webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。</p>
+<p>函数是<code>JavaScript</code>应用程序的基础。 它帮助你实现抽象层，模拟类，信息隐藏和模块。 在<code>TypeScript</code>里，虽然已经支持类，命名空间和模块，但函数仍然是主要的定义 行为的地方。 <code>TypeScript</code>为<code>JavaScript</code>函数添加了额外的功能，让我们可以更容易地使用。</p>
 </blockquote>
-<p><strong>webSocket 有以下特点：</strong></p>
-<ul>
-<li>建立在 TCP 协议之上</li>
-<li>与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议</li>
-<li>数据格式比较轻量，也可以发送二进制数据</li>
-<li>没有同源限制，客户端可以与任意服务器通信</li>
-<li>协议标识是<code>ws</code>,(如果加密，则为<code>wss</code>),服务器网址是 URL</li>
-</ul>
+<h3 id="typescript-为函数定义类型"><a href="#typescript-为函数定义类型" class="headerlink" title="typescript 为函数定义类型"></a>typescript 为函数定义类型</h3><blockquote>
+<p>我们可以给每个参数添加类型之后再为函数本身添加返回值类型，TypeScript 能够根据返回语句自动推断出返回值类型，因此我们通常省略它。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">add</span>(<span class="params">x: number, y: number</span>): <span class="title">number</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x + y</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> myAdd = <span class="function"><span class="keyword">function</span>(<span class="params">x: number, y: number</span>): <span class="title">number</span> </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x + y</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="可选参数和默认参数"><a href="#可选参数和默认参数" class="headerlink" title="可选参数和默认参数"></a>可选参数和默认参数</h3><blockquote>
+<p>TypeScript 里的每个函数参数都是必须的。 这不是指不能传递 null 或 undefined 作为参数，而是说编译器检查用户是否为每个参数都传入了值。<br>编译器还会假设只有这些参数会被传递进函数。 <code>简短地说，传递给一个函数的参数个数必须与函数期望的参数个数一致</code>。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">buildName</span>(<span class="params">firstName: string, lastName: string</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> firstName + <span class="string">" "</span> + lastName</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result = buildName(<span class="string">"Bob"</span>) <span class="comment">// error 应该是2个参数</span></span><br><span class="line"><span class="keyword">let</span> result = buildName(<span class="string">"Bob"</span>, <span class="string">"Ada"</span>, <span class="string">"sr"</span>) <span class="comment">// error 应该是2个参数</span></span><br><span class="line"><span class="keyword">let</span> result = buildName(<span class="string">"Bob"</span>, <span class="string">"Ada"</span>) <span class="comment">// right</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>ws://example.com:80/some</p>
+<p><code>avaScript</code>里，每个参数都是可选的，可传可不传。 没传参的时候，它的值就是<code>undefined</code>。 在<code>TypeScript</code>里我们可以在参数名旁使用 ?实现可选参数的功能。 比如，我们想让 last name 是可选的：</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">'wss://echo.websocket.org'</span>);</span><br><span class="line">ws.onopen = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'连接打开...'</span>);</span><br><span class="line">  ws.send(<span class="string">'hello webSocket'</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onmessage = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`接受到的信息<span class="subst">$&#123;e.data&#125;</span>`</span>);</span><br><span class="line">  ws.close();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onclose = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'连接关闭'</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onerror = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(e);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="webSocket-readyState"><a href="#webSocket-readyState" class="headerlink" title="webSocket.readyState"></a>webSocket.readyState</h3><blockquote>
-<p><code>readyState</code> 属性返回实例对象的当前状态，共有 4 种状态</p>
-</blockquote>
-<ul>
-<li>CONNECTING:值为 0，表示正在连接</li>
-<li>OPEN:值为 1，表示连接成功，可以通信了</li>
-<li>CLOSEING:值为 2，表示连接正在关闭</li>
-<li>CLOSEED:值 3，表示连接已经关闭，或者打开连接失败</li>
-</ul>
-<p><em>WebSocket 是一种浏览器与服务器进行全双工通讯的网络技术，属于用于层协议。他基于 TCP 传输协议，并复用 HTTP 的握手通道</em></p>
-<p>WebSocket 为了保持客户端、服务端的实时双向通信，需要确保客户端、服务端之间的 TCP 通道保持连接没有断开。然而，对于长时间没有数据往来的连接，如果依旧长时间保持着，可能会浪费包括的连接资源。</p>
-<p>但不排除有些场景，客户端、服务端虽然长时间没有数据往来，但仍需要保持连接。这个时候，可以采用心跳来实现。</p>
-<p>发送方-&gt;接收方：ping<br>接收方-&gt;发送方：pong<br>ping、pong 的操作，对应的是 WebSocket 的两个控制帧，opcode 分别是 0x9、0xA。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">buildName</span>(<span class="params">firstName: string, lastName?: string</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (lastName) &#123;</span><br><span class="line">    <span class="keyword">return</span> firstName + <span class="string">" "</span> + lastName</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> firstName</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result1 = buildName(<span class="string">"Bob"</span>) <span class="comment">// works correctly now</span></span><br><span class="line"><span class="keyword">let</span> result2 = buildName(<span class="string">"Bob"</span>, <span class="string">"Adams"</span>, <span class="string">"Sr."</span>) <span class="comment">// error, too many parameters</span></span><br><span class="line"><span class="keyword">let</span> result3 = buildName(<span class="string">"Bob"</span>, <span class="string">"Adams"</span>) <span class="comment">// ah, just right</span></span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>举例，WebSocket 服务端向客户端发送 ping，只需要如下代码（采用 ws 模块）</p>
+<p>可选参数必须跟在必须参数后面。 如果上例我们想让<code>first name</code>是可选的，那么就必须调整它们的位置，把<code>first name</code>放在后面。</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">ws.ping(<span class="string">''</span>, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 代码执行顺序</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'async1 start'</span>);</span><br><span class="line">  <span class="keyword">await</span> async2();</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'async1 end'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'async2'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'script start'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'setTimeout'</span>);</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line">async1();</span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'promise1'</span>);</span><br><span class="line">  resolve();</span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'promise2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'script end'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// script start</span></span><br><span class="line"><span class="comment">// async1 start</span></span><br><span class="line"><span class="comment">// async2</span></span><br><span class="line"><span class="comment">// promise1</span></span><br><span class="line"><span class="comment">// script end</span></span><br><span class="line"><span class="comment">// async1 end</span></span><br><span class="line"><span class="comment">// promise2</span></span><br><span class="line"><span class="comment">// setTimeout</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*与普通可选参数不同的是，带默认值的参数不需要放在必须参数的后面。 如果带默认值的参数出现在必须参数前面，用户必须明确的传入 undefined值来获得默认值。 例如，我们重写最后一个例子，让 firstName是带默认值的参数*/</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">buildName</span>(<span class="params">firstName = <span class="string">"Will"</span>, lastName: string</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> firstName + <span class="string">" "</span> + lastName</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> result1 = buildName(<span class="string">"Bob"</span>) <span class="comment">// error, too few parameters</span></span><br><span class="line"><span class="keyword">let</span> result2 = buildName(<span class="string">"Bob"</span>, <span class="string">"Adams"</span>, <span class="string">"Sr."</span>) <span class="comment">// error, too many parameters</span></span><br><span class="line"><span class="keyword">let</span> result3 = buildName(<span class="string">"Bob"</span>, <span class="string">"Adams"</span>) <span class="comment">// okay and returns "Bob Adams"</span></span><br><span class="line"><span class="keyword">let</span> result4 = buildName(<span class="literal">undefined</span>, <span class="string">"Adams"</span>) <span class="comment">// okay and returns "Will Adams"</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -383,8 +370,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/hexoView/2019/02/21/ES6中的proxy/" rel="next" title="ES6中的proxy">
-                <i class="fa fa-chevron-left"></i> ES6中的proxy
+              <a href="/hexoView/2019/05/28/typeScript的变量、接口及类/" rel="next" title="typeScript的变量、接口及类">
+                <i class="fa fa-chevron-left"></i> typeScript的变量、接口及类
               </a>
             
           </div>
@@ -393,8 +380,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/hexoView/2019/02/21/javascript面向对象/" rel="prev" title="javascript面向对象">
-                javascript面向对象 <i class="fa fa-chevron-right"></i>
+              <a href="/hexoView/2019/05/29/文件和二进制数据的操作Blob/" rel="prev" title="文件和二进制数据的操作Blob">
+                文件和二进制数据的操作Blob <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -530,7 +517,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#webSocket-readyState"><span class="nav-number">1.</span> <span class="nav-text">webSocket.readyState</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#typescript-为函数定义类型"><span class="nav-number">1.</span> <span class="nav-text">typescript 为函数定义类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#可选参数和默认参数"><span class="nav-number">2.</span> <span class="nav-text">可选参数和默认参数</span></a></li></ol></div>
             
 
           </div>
@@ -728,9 +715,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/02/21/myHexo/';
-          this.page.identifier = '2019/02/21/myHexo/';
-          this.page.title = 'webSocket协议';
+          this.page.url = 'http://yoursite.com/2019/05/29/typeScript中的函数及泛型/';
+          this.page.identifier = '2019/05/29/typeScript中的函数及泛型/';
+          this.page.title = 'typeScript的函数及泛型';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://hexoFeiyu.disqus.com/embed.js';

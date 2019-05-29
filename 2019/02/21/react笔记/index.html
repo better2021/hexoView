@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="React 是一个为数据提供渲染为 HTML 视图的开源 JavaScript 库。React 视图通常采用包含以自定义 HTML 标记规定的其他组件的组件渲染。React 为程序员提供了一种子组件不能直接影响外层组件的模型，数据改变时对 HTML 文档的有效更新，和现代单页应用中组件之间干净的分离。  可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-08T12:00:35.164Z">
+<meta property="og:updated_time" content="2019-05-08T13:13:29.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="react笔记">
 <meta name="twitter:description" content="React 是一个为数据提供渲染为 HTML 视图的开源 JavaScript 库。React 视图通常采用包含以自定义 HTML 标记规定的其他组件的组件渲染。React 为程序员提供了一种子组件不能直接影响外层组件的模型，数据改变时对 HTML 文档的有效更新，和现代单页应用中组件之间干净的分离。  可以使用jsx中的点表示来引用react组件例如：MyComponents.DatePiker">
@@ -382,6 +382,9 @@
 <p>在 React 中，我们也可以通过组合来实现这一点。“特殊”组件可以通过 props 定制并渲染“一般”组件：</p>
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Dialog</span>(<span class="params">props</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    &lt;FancyBorder color=<span class="string">"blue"</span>&gt;</span><br><span class="line">      &lt;h1 className=<span class="string">"Dialog-title"</span>&gt;&#123;props.title&#125;&lt;<span class="regexp">/h1&gt;</span></span><br><span class="line"><span class="regexp">      &lt;p className="Dialog-message"&gt;&#123;props.message&#125;&lt;/</span>p&gt;</span><br><span class="line">    &lt;<span class="regexp">/FancyBorder&gt;</span></span><br><span class="line"><span class="regexp">  )</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">function WelcomeDialog() &#123;</span></span><br><span class="line"><span class="regexp">  return (</span></span><br><span class="line"><span class="regexp">    &lt;Dialog title="Welcome" message="Thank you for visiting our spacecraft!" /</span>&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在 <code>JavaScript class</code> 中，每次你定义其子类的构造函数时，都需要调用 <code>super</code> 方法。<br>因此，在所有含有构造函数的的 <code>React</code> 组件中，构造函数必须以 <code>super(props)</code> 开头。</p>
+</blockquote>
 
       
     </div>
@@ -507,7 +510,7 @@
               
                 <a href="/hexoView/archives/">
               
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

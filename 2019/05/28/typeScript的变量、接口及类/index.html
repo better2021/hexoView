@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
+<meta name="description" content="let 和 const 是 JavaScript 里相对较新的变量声明方式。 像我们之前提到过的， let 在很多方面与 var 是相似的，但是可以帮助大家避免在 JavaScript 里常见一些问题。const 是对 let 的一个增强，它能阻止对一个变量再次赋值。  当用 let 声明一个变量，它使用的是词法作用域或块作用域。 不同于使用 var 声明的变量那样可以在包含它们的函数外访问，块">
 <meta name="keywords" content="前端笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="webSocket协议">
-<meta property="og:url" content="http://yoursite.com/2019/02/21/myHexo/index.html">
+<meta property="og:title" content="typeScript的变量、接口及类">
+<meta property="og:url" content="http://yoursite.com/2019/05/28/typeScript的变量、接口及类/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
+<meta property="og:description" content="let 和 const 是 JavaScript 里相对较新的变量声明方式。 像我们之前提到过的， let 在很多方面与 var 是相似的，但是可以帮助大家避免在 JavaScript 里常见一些问题。const 是对 let 的一个增强，它能阻止对一个变量再次赋值。  当用 let 声明一个变量，它使用的是词法作用域或块作用域。 不同于使用 var 声明的变量那样可以在包含它们的函数外访问，块">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-25T08:34:45.537Z">
+<meta property="og:updated_time" content="2019-05-29T03:52:02.189Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="webSocket协议">
-<meta name="twitter:description" content="webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。  webSocket 有以下特点：  建立在 TCP 协议之上 与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议 数据格式比较轻量，也可以发送二进制数据 没有同源限制，客户端可以与任意服务器通信 协议标识是ws,(如果加密，则为wss)">
+<meta name="twitter:title" content="typeScript的变量、接口及类">
+<meta name="twitter:description" content="let 和 const 是 JavaScript 里相对较新的变量声明方式。 像我们之前提到过的， let 在很多方面与 var 是相似的，但是可以帮助大家避免在 JavaScript 里常见一些问题。const 是对 let 的一个增强，它能阻止对一个变量再次赋值。  当用 let 声明一个变量，它使用的是词法作用域或块作用域。 不同于使用 var 声明的变量那样可以在包含它们的函数外访问，块">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/21/myHexo/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/28/typeScript的变量、接口及类/">
 
 
 
 
 
-  <title>webSocket协议 | Hexo</title>
+  <title>typeScript的变量、接口及类 | Hexo</title>
   
 
 
@@ -239,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexoView/2019/02/21/myHexo/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexoView/2019/05/28/typeScript的变量、接口及类/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="feiyu">
@@ -256,7 +256,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">webSocket协议</h1>
+          <h1 class="post-title" itemprop="name headline">typeScript的变量、接口及类</h1>
         
 
         <div class="post-meta">
@@ -268,8 +268,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-21T15:52:49+07:00">
-                2019-02-21
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-28T16:10:00+07:00">
+                2019-05-28
               </time>
             
 
@@ -287,8 +287,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/hexoView/2019/02/21/myHexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/02/21/myHexo/" itemprop="commentCount"></span>
+                <a href="/hexoView/2019/05/28/typeScript的变量、接口及类/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/05/28/typeScript的变量、接口及类/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -296,7 +296,7 @@
 
           
           
-             <span id="/hexoView/2019/02/21/myHexo/" class="leancloud_visitors" data-flag-title="webSocket协议">
+             <span id="/hexoView/2019/05/28/typeScript的变量、接口及类/" class="leancloud_visitors" data-flag-title="typeScript的变量、接口及类">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -328,37 +328,38 @@
 
       
         <blockquote>
-<p>webSocket 是 HTNL5 新增的协议，她的目标是在浏览器和服务器之间建立一个不受限的双向通信的通道。</p>
+<p><code>let</code> 和 <code>const</code> 是 <code>JavaScript</code> 里相对较新的变量声明方式。 像我们之前提到过的， <code>let</code> 在很多方面与 <code>var</code> 是相似的，但是可以帮助大家避免在 <code>JavaScript</code> 里常见一些问题。<br><code>const</code> 是对 <code>let</code> 的一个增强，它能阻止对一个变量再次赋值。</p>
 </blockquote>
-<p><strong>webSocket 有以下特点：</strong></p>
-<ul>
-<li>建立在 TCP 协议之上</li>
-<li>与 HTTP 协议有良好的兼容性，默认端口也是 80 和 443，并且握手阶段采用 HTTP 协议</li>
-<li>数据格式比较轻量，也可以发送二进制数据</li>
-<li>没有同源限制，客户端可以与任意服务器通信</li>
-<li>协议标识是<code>ws</code>,(如果加密，则为<code>wss</code>),服务器网址是 URL</li>
-</ul>
+<p><strong><em>当用 let 声明一个变量，它使用的是词法作用域或块作用域。 不同于使用 var 声明的变量那样可以在包含它们的函数外访问，块作用域变量在包含它们的块或 for 循环之外是不能访问的</em></strong></p>
 <blockquote>
-<p>ws://example.com:80/some</p>
+<p>默认值可以让你在属性为 undefined 时使用缺省值</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ws = <span class="keyword">new</span> WebSocket(<span class="string">'wss://echo.websocket.org'</span>);</span><br><span class="line">ws.onopen = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'连接打开...'</span>);</span><br><span class="line">  ws.send(<span class="string">'hello webSocket'</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onmessage = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">`接受到的信息<span class="subst">$&#123;e.data&#125;</span>`</span>);</span><br><span class="line">  ws.close();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onclose = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'连接关闭'</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">ws.onerror = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(e);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="webSocket-readyState"><a href="#webSocket-readyState" class="headerlink" title="webSocket.readyState"></a>webSocket.readyState</h3><blockquote>
-<p><code>readyState</code> 属性返回实例对象的当前状态，共有 4 种状态</p>
-</blockquote>
-<ul>
-<li>CONNECTING:值为 0，表示正在连接</li>
-<li>OPEN:值为 1，表示连接成功，可以通信了</li>
-<li>CLOSEING:值为 2，表示连接正在关闭</li>
-<li>CLOSEED:值 3，表示连接已经关闭，或者打开连接失败</li>
-</ul>
-<p><em>WebSocket 是一种浏览器与服务器进行全双工通讯的网络技术，属于用于层协议。他基于 TCP 传输协议，并复用 HTTP 的握手通道</em></p>
-<p>WebSocket 为了保持客户端、服务端的实时双向通信，需要确保客户端、服务端之间的 TCP 通道保持连接没有断开。然而，对于长时间没有数据往来的连接，如果依旧长时间保持着，可能会浪费包括的连接资源。</p>
-<p>但不排除有些场景，客户端、服务端虽然长时间没有数据往来，但仍需要保持连接。这个时候，可以采用心跳来实现。</p>
-<p>发送方-&gt;接收方：ping<br>接收方-&gt;发送方：pong<br>ping、pong 的操作，对应的是 WebSocket 的两个控制帧，opcode 分别是 0x9、0xA。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">keepObject</span>(<span class="params">param: &#123; a: string, b?: number &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// b为undefined时的缺省值，有b或没有b都不会报错</span></span><br><span class="line">  <span class="keyword">let</span> &#123; a, b = <span class="number">100</span> &#125; = param</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>举例，WebSocket 服务端向客户端发送 ping，只需要如下代码（采用 ws 模块）</p>
+<p>解构有嗯呢该用于函数声明</p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">ws.ping(<span class="string">''</span>, <span class="literal">false</span>, <span class="literal">true</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 代码执行顺序</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'async1 start'</span>);</span><br><span class="line">  <span class="keyword">await</span> async2();</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'async1 end'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">async2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'async2'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'script start'</span>);</span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'setTimeout'</span>);</span><br><span class="line">&#125;, <span class="number">0</span>);</span><br><span class="line">async1();</span><br><span class="line"><span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'promise1'</span>);</span><br><span class="line">  resolve();</span><br><span class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">'promise2'</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="built_in">console</span>.log(<span class="string">'script end'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// script start</span></span><br><span class="line"><span class="comment">// async1 start</span></span><br><span class="line"><span class="comment">// async2</span></span><br><span class="line"><span class="comment">// promise1</span></span><br><span class="line"><span class="comment">// script end</span></span><br><span class="line"><span class="comment">// async1 end</span></span><br><span class="line"><span class="comment">// promise2</span></span><br><span class="line"><span class="comment">// setTimeout</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">type C = &#123; <span class="attr">a</span>: string, b?: number &#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">&#123; a, b &#125;: C</span>): <span class="title">void</span> </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>TypeScript 的核心原则之一是对值所具有的结构进行类型检查。 它有时被称做“鸭式辨型法”或“结构性子类型化”。<br>在 TypeScript 里，接口的作用就是为这些类型命名和为你的代码或第三方代码定义契约</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">printLabel</span>(<span class="params">labelObj: &#123; lable: string &#125;</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(labelObj.label)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 类型检查器会查看printLabel的调用。 printLabel有一个参数，并要求这个对象参数有一个名为label类型为string的属性。</span></span><br><span class="line"><span class="comment">// 需要注意的是，我们传入的对象参数实际上会包含很多属性，但是编译器只会检查那些必需的属性是否存在，并且其类型是否匹配</span></span><br><span class="line"><span class="keyword">let</span> myObj = &#123; <span class="attr">size</span>: <span class="number">10</span>, <span class="attr">label</span>: <span class="string">"size 10 object"</span> &#125;</span><br><span class="line">printLabel(myObj)</span><br><span class="line"></span><br><span class="line">interface SquareConfig &#123;</span><br><span class="line">  color?: string;</span><br><span class="line">  width?: number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">createSquare</span>(<span class="params">config: SquareConfig</span>): </span>&#123; color: string, <span class="attr">area</span>: number &#125; &#123;</span><br><span class="line">  <span class="keyword">let</span> newSquare = &#123; <span class="attr">color</span>: <span class="string">"white"</span>, <span class="attr">area</span>: <span class="number">100</span> &#125;</span><br><span class="line">  <span class="keyword">if</span> (config.color) &#123;</span><br><span class="line">    newSquare.color = config.color</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (config.width) &#123;</span><br><span class="line">    newSquare.area = config.width * config.width</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newSquare</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> mySquare = createSquare(&#123; <span class="attr">color</span>: <span class="string">"black"</span> &#125;)</span><br></pre></td></tr></table></figure>
+<p><strong>带有可选属性的接口与普通的接口定义差不多，只是在可选属性名字定义的后面加一个?符号。</strong></p>
+<h3 id="只读属性"><a href="#只读属性" class="headerlink" title="只读属性"></a>只读属性</h3><blockquote>
+<p>一些对象属性只能在对象刚刚创建的时候修改其值，你可以再属性名前用<code>readonly</code>来指定只读属性</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">interface Point&#123;</span><br><span class="line">  readonly x:number;</span><br><span class="line">  readonly y:number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> p1:Point =&#123;<span class="attr">x</span>:<span class="number">10</span>,<span class="attr">y</span>:<span class="number">20</span>&#125;</span><br><span class="line"><span class="built_in">console</span>.log(o1.x) <span class="comment">// 10</span></span><br><span class="line">p1.x =<span class="number">5</span> <span class="comment">// error</span></span><br></pre></td></tr></table></figure>
+<h3 id="函数类型"><a href="#函数类型" class="headerlink" title="函数类型"></a>函数类型</h3><blockquote>
+<p>为了使用接口表示函数类型，我们需要给接口定义一个调用签名。 它就像是一个只有参数列表和返回值类型的函数定义。参数列表里的每个参数都需要名字和类型。</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">interface SearchFunc &#123;</span><br><span class="line">  (source: string, <span class="attr">substring</span>: string): boolean;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 这样定义后，我们可以像使用其它接口一样使用这个函数类型的接口。 下例展示了如何创建一个函数类型的变量，并将一个同类型的函数赋值给这个变量。</span></span><br><span class="line"><span class="keyword">let</span> mySearch: SearchFunc</span><br><span class="line">mySearch = <span class="function"><span class="keyword">function</span>(<span class="params">source: string, substring: string</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> result = source.search(substring)</span><br><span class="line">  <span class="keyword">return</span> resiltr &gt; <span class="number">-1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="公共，私有与受保护的修饰符"><a href="#公共，私有与受保护的修饰符" class="headerlink" title="公共，私有与受保护的修饰符"></a>公共，私有与受保护的修饰符</h3><blockquote>
+<p>默认为<code>public</code></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">  public name:string</span><br><span class="line">  public <span class="keyword">constructor</span>(theName:string)&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = theName</span><br><span class="line">  &#125;</span><br><span class="line">  piblic move(distanceInMeters:number)&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;<span class="keyword">this</span>.name&#125;</span> moved`</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="理解-private"><a href="#理解-private" class="headerlink" title="理解 private"></a>理解 private</h3><blockquote>
+<p>当成员被标记<code>private</code>时，它就不能再声明它的类的外部访问</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal</span></span>&#123;</span><br><span class="line">  private nane:string</span><br><span class="line">  <span class="keyword">constructor</span>(theName:string)&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = theName</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Animal(<span class="string">'Cat'</span>).name <span class="comment">// 错误: 'name' 是私有的.</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -383,8 +384,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/hexoView/2019/02/21/ES6中的proxy/" rel="next" title="ES6中的proxy">
-                <i class="fa fa-chevron-left"></i> ES6中的proxy
+              <a href="/hexoView/2019/05/27/TypeScript学习/" rel="next" title="TypeScript学习">
+                <i class="fa fa-chevron-left"></i> TypeScript学习
               </a>
             
           </div>
@@ -393,8 +394,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/hexoView/2019/02/21/javascript面向对象/" rel="prev" title="javascript面向对象">
-                javascript面向对象 <i class="fa fa-chevron-right"></i>
+              <a href="/hexoView/2019/05/29/typeScript中的函数及泛型/" rel="prev" title="typeScript的函数及泛型">
+                typeScript的函数及泛型 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -530,7 +531,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#webSocket-readyState"><span class="nav-number">1.</span> <span class="nav-text">webSocket.readyState</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#只读属性"><span class="nav-number">1.</span> <span class="nav-text">只读属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数类型"><span class="nav-number">2.</span> <span class="nav-text">函数类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#公共，私有与受保护的修饰符"><span class="nav-number">3.</span> <span class="nav-text">公共，私有与受保护的修饰符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#理解-private"><span class="nav-number">4.</span> <span class="nav-text">理解 private</span></a></li></ol></div>
             
 
           </div>
@@ -728,9 +729,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2019/02/21/myHexo/';
-          this.page.identifier = '2019/02/21/myHexo/';
-          this.page.title = 'webSocket协议';
+          this.page.url = 'http://yoursite.com/2019/05/28/typeScript的变量、接口及类/';
+          this.page.identifier = '2019/05/28/typeScript的变量、接口及类/';
+          this.page.title = 'typeScript的变量、接口及类';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://hexoFeiyu.disqus.com/embed.js';
